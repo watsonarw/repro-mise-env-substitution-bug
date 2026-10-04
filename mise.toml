@@ -1,0 +1,9 @@
+[env]
+_.file = [".env", ".env.{{ env.MISE_ENV | default(value='none') }}"]
+
+[tasks.vars]
+run = [
+  'echo "VAR_A is $VAR_A"',
+  'echo "VAR_B is $VAR_B"',
+  'echo "VAR_C is $VAR_C"',
+]
